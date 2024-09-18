@@ -1,0 +1,360 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root{
+    /* border: 1px red solid; */
+    font-size: 22px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS Style*/
+.navbar{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-logo{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    text-align: center;
+    position: relative;
+}
+
+.navbar-logo img {
+    height: 100px;
+}
+
+.navbar-icon{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    padding: 0 20px;
+}
+
+.navbar-logo i {
+    font-size: 30px;
+    color: #fff;
+}
+
+#btn-play{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    height: auto;
+    background-color: #f1d205;
+    padding: 5px 50px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    border-style: none;
+}
+
+
+.menu {
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding: 3px 15px;
+    font-size: 1rem; 
+}
+
+.menu a:hover {
+    color: #FCDE70;
+    font-weight: bold;
+}
+
+.hero {
+    top: 120px;
+    /* z-index: -1; */
+    position: relative;
+    background-image: url("assets/hero.jpg");
+    background-color: #f1d205;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 600px;
+    padding: 20px;
+}
+
+.hero-content{
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    color: #fff;
+}
+
+#hero-welcome {
+    font-family: "Protest Guerrilla", system-ui;
+    font-size: 50px;
+    letter-spacing: -0.5px;
+    padding-bottom: 10px;
+    /* color: #fff; */
+}
+
+#hero-sub-welcome{
+    letter-spacing: -0.5px;
+    line-height: 25px;
+    word-spacing: 5px;
+    /* color: #fff; */
+}
+
+.patch-notes{
+    background-color: #222;
+    height: 700px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.patch-notes-card {
+    position: absolute;
+    background-color: #2f2e2e;
+    height: 500px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: 90%;
+    margin-top: -50px;
+}
+
+.patch-notes-content-left{
+    float: left;
+    color: #fff;
+    width: 20%;
+    height: fit-content;
+    padding: 56px 80px;
+}
+
+.patch-notes-content-right {
+    float: right;
+}
+
+.patch-notes-content-right img {
+    height: 500px;
+}
+
+.patch-notes-content-left h1 {
+    font-family: "Protest Guerrilla", system-ui;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.pc-console {
+    display: inline-block;
+    padding: 5px 5px;
+    width: 25%;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+.yellow {
+    border: 1px solid #f1d205;
+    color: #f1d205;
+}
+
+.gray {
+    border: 1px solid #5f5d5d;
+    color: #5f5d5d;
+}
+
+.patch-notes-content-left h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.patch-notes-content-left p {
+    color: #7d7d7d;
+    font-size: 16px;
+}
+
+.news-event-wrap {
+    background-color: #f2f2f2;
+    height: 100%;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+#news {
+    position: relative;
+    text-align: center;
+    margin-top: -130px;
+}
+
+#news .menu-title {
+    font-family: "Protest Guerrilla", system-ui;
+    font-size: 40px;
+    margin-bottom: 32px;
+    color: #fff;
+}
+
+#news i {
+    font-size: 30px;
+}
+
+.card-news-wrap {
+    display: block;
+    /* position: absolute; */
+    /* left: 0; */
+    /* right: 0; */
+    margin-inline: auto;
+    width: 90%;
+}
+
+.card-news {
+    text-align: left;
+    display: inline-block;
+    width: 30%;
+    margin-right: 16px;
+    background-color: #fff;
+}
+
+.card-news .news-img {
+    width: 100%;
+}
+
+.news-content {
+    padding: 40px;
+}
+
+#news-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+
+#news-type {
+    font-weight: 500;
+    color: #f1d205;
+    font-size: 14px;
+    margin-right: 24px;
+}
+
+#news-release {
+    font-weight: 500;
+    color: #7d7d7d;
+    font-size: 14px;
+    margin-right: 24px;
+
+}
+
+#events {
+    /* margin-top: 1000px; */
+    margin-top: 100px;
+    position: relative;
+    text-align: center;
+}
+
+#events .menu-title {
+    font-family: "Protest Guerrilla", system-ui;
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+#events i {
+    font-size: 30px;
+}
+
+.card-event-wrap{
+    width: 90%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.card-event{
+    display: inline-block;
+    width: 40%;
+    margin: 0px 10px;
+    text-align: left;
+    background-color: #2f2e2e;
+}
+
+.event-img {
+    width: 100%;
+}
+
+.event-content {
+    padding: 40px;
+}
+
+#event-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+#event-type {
+    font-weight: 500;
+    color: #f1d205;
+    font-size: 14px;
+    margin-right: 24px;
+}
+
+#event-release {
+    font-weight: 500;
+    color: #7d7d7d;
+    font-size: 14px;
+    margin-right: 24px;
+}
